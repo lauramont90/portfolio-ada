@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-family: poppins;
+    
+}
+
+
+/*********Navegadores********/
+
+nav{
+    display: block;
+    text-align: right;
+    
+    background-color: white;
+    height: 4%;
+    margin: 0px;
+    padding: 30px 0 30px;
+    box-shadow: 0 22px 25px -10px rgb(172, 165, 165);
+    position: fixed;
+    width: 100%;
+    font-family: Poppins;
+    font-size: 14px;
+    
+    
+
+}
+a{
+    text-decoration: none;
+    border-radius: 3px;
+    font-size: 1.2em;
+}
+.btn:hover{
+    color: rgb(106, 23, 184);
+    font-size: 1.2em;
+    
+}
+.btn{
+    color: black;
+    
+    margin: 15px 0;
+    padding: 10px 30px 10px;
+
+
+}
+.contacto{
+    border-radius: 25px;
+    background-color: blueviolet;
+    color: white;
+    
+}
+.contacto:hover{
+    background-color: rgb(165, 101, 224);
+    color: black;
+}
+
+ul{
+    list-style: none;
+    display: inline-flex;
+}
+/*********Presentacion seccion 1 **********/
+h2{
+    font-size: 1.9em;
+    text-align: center;
+}
+.mlm{
+    font-size: 3em;
+    color: blueviolet;
+    font-weight: 900%;
+    font-family: poppins;
+}
+
+.fut{
+    text-align: left;
+    margin: 0;
+}
+h2{
+    text-align: left;
+}
+.cajagral{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 0px auto;
+    padding: 150px 40px;
+}
+.caja2{
+    display: flex;
+    margin: 1em;
+}
+
+
+.boton{
+    height: 40px;
+    width: 150px;
+    border: none;
+    color: #FFF;
+    background-color: blueviolet;
+    display: block;
+    margin: 40px 0px 100px; 
+    border-radius: 25px;
+    text-transform: uppercase;
+}
+
+
+/**********Parrafos y titulos****/
+p{
+    font-size: 1.1em;
+    color: black;
+    text-align: center;
+    margin: 2em;
+    
+
+}
+.titulo{
+    font-size: 50px;
+    color: black;
+    font-weight: 900;
+    text-align: center;
+    padding: 0.5em;
+}
+/****Imagenes de mis conocimientos****/
+.cajagralimg{
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+    justify-content: center;
+    text-align: center;
+    
+    margin: 0 auto;
+}
+
+.bor{
+    justify-content: center;
+    border: 1px solid rgb(167, 166, 166);
+    border-radius: 10px;
+    margin: 10px;
+    padding: 50px;
+    background-color: white;
+}
+.fondogrey{
+    background-color: rgb(233, 233, 233);
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding-bottom: 40px;    
+
+}
+.mp1{
+    width: 25%;    
+}
