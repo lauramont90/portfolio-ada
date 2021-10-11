@@ -14,7 +14,7 @@ body{
 }
 
 
-/*********Navegadores********/
+/*********Navegador********/
 
 
   
@@ -78,10 +78,7 @@ nav{
 }
 
 
-ul{
-    list-style: none;
-    display: inline-flex;
-}
+
 /*********Presentacion seccion 1 **********/
 h2{
     font-size: 1.9em;
@@ -179,7 +176,7 @@ h2{
     width: 30%;
 
 }
-.bor:hover{
+.bor:hover, .bor1:hover{
     border: blueviolet 1px solid;
     color: blueviolet;
 }
@@ -224,31 +221,40 @@ blockquote{
     
     
 }
-.mp{
+.cajagralimg-mp{
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    flex-direction: left;
+    padding-left: 140px;
+   
+}
+.bor1{
+    justify-content: center;
+    border: 1px solid rgb(167, 166, 166);
+    border-radius: 10px;
+    margin: 10px 10px;
+    padding: 60px 60px;
+    background-color: white;
+    width: 28%;
 }
 .mp1{
-    width: 25%;
+
     height: 300px;
-    margin: 10px 10px;
     
-    align-items: center;
-    justify-content: center;
+    
+    
+    
     text-align: center;
 }
 .imgt{
-    width: 60%;
+    width: 100%;
     text-align: center;
-    margin: 20px;
-    flex-basis: 10px;
+    
+    
     
 }
-
 
 
 
@@ -264,7 +270,7 @@ blockquote{
    
    
 }
-.med{
+.medi{
     font-size: 17px;
 }
 .contesc{
@@ -347,9 +353,7 @@ blockquote{
     justify-content: space-between;
     margin-bottom: 15px;
 }
-/**.nom{
-    width: 100%;
-}*/
+
 
 .env{
     background-color: blueviolet;
@@ -455,8 +459,7 @@ footer {
 
 }
 
-/*******SOMBREADO LATERAL*******/
-/*.shadow{
-    box-shadow: 0px 0px 25px 0px rgb(172, 165, 165);
-}
-*/
+/**ACLARACIONES***
+En la mayoria de los casos utilicé
+px en vez de em, los cuales me resultaron
+más prácticos para acomodar los estilos**/

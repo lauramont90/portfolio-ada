@@ -1,0 +1,198 @@
+@media (max-width:1092px) {
+    header{
+        display:none;
+    }
+    .cajagral{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    h2, .fut, .mlm{
+        text-align: center;
+    
+    }
+    .boton{
+        margin: 40px 160px 100px;
+    }
+    .caja2{
+        margin-bottom: 80px;
+        margin-left: 50px;
+    }
+    
+}
+@media (max-width:919px){
+    .nya{
+        width: 98%;
+    }
+    .env{
+        width: 37%;
+    }
+    .bor{
+        width: 32%;
+    }
+    .cajagralimg{
+        width: 100%;
+    }
+    .cajagralimg-mp{
+        padding-left: 60px;
+    }
+    .mp1{
+        height: 250px;
+    }
+}
+@media (max-width:900px){
+    .caja1{
+        width: 54%;
+    }
+    .bor1{
+        width: 34%;
+    }
+    .cajagralimg-mp{
+        justify-content: space-evenly;
+    }
+    .backgrey{
+        background-color: white;
+        padding-top: 40px;
+    }
+    .contesc{
+        border: none;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .contenedored{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .redesoc{
+        width: 50%;
+    }
+    .contact{
+        width: 100%;
+        padding-bottom: 100px;
+    
+    }
+    .medi{
+        width: 50%;
+        padding-bottom: 30px;
+    }
+    .form{
+        width: 100%;
+    }
+    .nya{
+        width: 97%;
+    }
+    .nomap{
+        justify-content: space-between;
+        width: 100%;
+    }
+    .nom{
+        width: 100%;
+    }
+    .env{
+        width: 15%;
+    }
+}
+@media (max-width:550px){
+    .cajagral{
+        padding-top: 0;
+    }
+    .caja1{
+        width: 86%;
+    }
+    .bor{
+        width: 46%;
+    }
+    .bor1{
+        width: 53%;
+    }
+    .cajagralimg-mp{
+        padding-left: 10px;
+    
+    }
+    .contact{
+        padding-right: 0;
+        width: 100%;
+        
+    }
+    .contesc{
+        padding-left: 20px;
+    }
+    .medi{
+        width: 100%;
+        padding-right: 120px;
+    }
+    .contenedored{
+        width: 100%;
+        margin-top: 3em;
+    }
+    .red{
+        margin: -10px -10px 18px;
+    }
+    .form{
+        padding-right: 0;
+    }
+    .env{
+        width: 25%;
+    }
+    .navinf{
+        display: none;
+    }
+}
+@media (max-width:499px){
+    .bor{
+        width: 45%;
+    }
+    .medi{
+        padding-right: 0;
+    }
+    .contenedored{
+        display: flex;
+        flex-direction: column;
+    }
+    .redesoc{
+        width: 70%;
+    }
+    .contact{
+        padding-right: 50px;
+        width: 100%;
+        padding-left: 20px;
+    }
+    .nomap{
+        display: flex;
+        flex-direction: column;
+    }
+    .nya{
+        width: 100%;
+    }
+}
+@media (max-width:350px){
+    .boton{
+        margin: 40px 75px;
+        width: 50%;
+    }
+    .titulo{
+        font-size: 40px;
+    }
+    .bor{
+        width: 75%;
+    }
+    .bor1{
+        width: 80%;
+    }
+    .backgrey{
+        padding-top: 1em;
+    }
+    .contact{
+        padding-left: 1em;
+        padding-right: 1em;
+
+    }
+    .redesoc{
+        width: 100%;
+    }
+    .env{
+        width: 44%;
+    }
+}
