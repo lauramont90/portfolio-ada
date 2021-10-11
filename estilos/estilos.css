@@ -1,42 +1,58 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 html{
     font-family: poppins;
     
+    
+}
+body{
+ 
+    box-shadow: -10px 0px 30px 0px rgb(172, 165, 165) inset;
 }
 
 
 /*********Navegadores********/
 
-nav{
-    display: block;
-    text-align: right;
+
+  
+header{
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    box-shadow: 0 22px 25px -10px rgb(172, 165, 165);
+    width: 100%;
     
     background-color: white;
-    height: 4%;
-    margin: 0px;
-    padding: 30px 0 30px;
-    box-shadow: 0 22px 25px -10px rgb(172, 165, 165);
-    position: fixed;
-    width: 100%;
+    font-size: 15px;
     font-family: Poppins;
-    font-size: 14px;
-    
-    
+    padding: 10px 0;
+    text-align: right;
+
 
 }
-a{
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 3em;
+    align-items: baseline; 
+}
+.br{
     text-decoration: none;
     border-radius: 3px;
     font-size: 1.2em;
+    padding-right: 2em;
 }
 .btn:hover{
     color: rgb(106, 23, 184);
     font-size: 1.2em;
     
+    
 }
+
+
 .btn{
     color: black;
     
@@ -53,8 +69,14 @@ a{
 }
 .contacto:hover{
     background-color: rgb(165, 101, 224);
-    color: black;
+    color: white;
+   
 }
+.box:active{
+    box-shadow: 0px 0px 34px 3px rgba(102,32,153,0.75);
+    border-radius: 25px;
+}
+
 
 ul{
     list-style: none;
@@ -82,20 +104,33 @@ h2{
 .cajagral{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     width: 100%;
-    margin: 0px auto;
-    padding: 150px 40px;
+    
+    padding-top: 2em;
+}
+.caja1{
+    
+    width: 46%;
+    margin: 12em 3em 3em;
+    display: flex;
+    flex-direction: column;
 }
 .caja2{
     display: flex;
-    margin: 1em;
+    margin-top: 1em;
+    
+    width: 40%;
+    
+}
+.imgcaja2{
+    width: 100%;
 }
 
 
 .boton{
-    height: 40px;
-    width: 150px;
+    height: 50px;
+    width: 32%;
     border: none;
     color: #FFF;
     background-color: blueviolet;
@@ -103,11 +138,12 @@ h2{
     margin: 40px 0px 100px; 
     border-radius: 25px;
     text-transform: uppercase;
+    font-size: 16px;
 }
 
 
 /**********Parrafos y titulos****/
-p{
+.parrafos{
     font-size: 1.1em;
     color: black;
     text-align: center;
@@ -116,7 +152,7 @@ p{
 
 }
 .titulo{
-    font-size: 50px;
+    font-size: 45px;
     color: black;
     font-weight: 900;
     text-align: center;
@@ -137,17 +173,290 @@ p{
     justify-content: center;
     border: 1px solid rgb(167, 166, 166);
     border-radius: 10px;
-    margin: 10px;
-    padding: 50px;
+    margin: 10px 10px;
+    padding: 60px 60px;
     background-color: white;
+    width: 30%;
+
+}
+.bor:hover{
+    border: blueviolet 1px solid;
+    color: blueviolet;
 }
 .fondogrey{
     background-color: rgb(233, 233, 233);
-    margin-top: 40px;
-    margin-bottom: 40px;
-    padding-bottom: 40px;    
+    padding-top: 100px;
+    
+    padding-bottom: 120px;  
+      
+
+    
+}
+/**********Seccion 3 cita******/
+
+.comilla{
+    font-size: 5em;
+    font-family: FontAwesome;
+    margin-top: 60px;
 
 }
-.mp1{
-    width: 25%;    
+.cita{
+    text-align: center;
 }
+.espacio{
+    background-color: blueviolet;
+    color: white;
+    width: 100%;
+    height: 100%;
+    margin: 0%;
+    padding-top: 80px;
+    padding-bottom: 130px;
+    
+    }
+blockquote{
+    padding: 60px;
+}
+/**********Mis Proyectos********/
+.proyect{
+    padding-top: 100px;
+    padding-bottom: 130px;
+    
+    
+    
+}
+.mp{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: left;
+}
+.mp1{
+    width: 25%;
+    height: 300px;
+    margin: 10px 10px;
+    
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.imgt{
+    width: 60%;
+    text-align: center;
+    margin: 20px;
+    flex-basis: 10px;
+    
+}
+
+
+
+
+
+/************CONTACTO Y FORMULARIO******/
+.backgrey{
+    background-color: rgb(241, 241, 241);
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   padding-bottom: 120px;
+   padding-top: 150px;
+   
+   
+}
+.med{
+    font-size: 17px;
+}
+.contesc{
+    
+    
+    display: flex;
+    text-align: left;
+    width: 85%;
+    background-color: white;
+    border-radius: 15px;
+    border: 1px solid #e0e0e0;
+    padding-top: 80px;
+    padding-bottom: 60px;
+    padding-left: 40px;
+    justify-content: space-around;
+    padding-right: 40px;
+}
+.contact{
+   
+    width: 45%;
+    
+    padding-right: 20px;
+}
+.redesoc{
+    display: flex;
+    
+    
+}
+.icon{
+    color: blueviolet;
+    font-size: 1.1em;
+    word-spacing: 1em;
+    padding: 0.6em;
+    
+}
+.red{
+    text-decoration: none;
+    color: black;
+    font-size: 1em;
+    margin: 0.4em;
+    
+}
+.redesoc:hover .icon{
+    border-radius: 5em;
+    color: white;
+    background-color: blueviolet;
+    padding: 0.6em;
+
+}
+.redesoc:hover .red{
+    color: blueviolet;
+}
+
+
+
+
+.form{
+    width: 50%;
+    
+    padding-left: 20px;
+}
+.nya{
+    width: 100%;
+    display: flex;
+    
+}
+      
+
+    
+    
+
+.left{
+    text-align: left;
+    padding: 0 1em 1em 0;
+    
+}
+.nomap{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+/**.nom{
+    width: 100%;
+}*/
+
+.env{
+    background-color: blueviolet;
+    color: white;
+    padding: 12px 35px 12px 35px;
+    font-size: 1em;
+    border-radius: 25px;
+    width: 25%;
+}
+.contactame{
+    text-align: left;
+
+}
+.msj {
+    display: flex;
+    flex-direction: column;
+    padding-top: 15px;
+
+}
+input,
+textarea {
+    border-radius: 20px;
+    background-color: #f6f7fb;
+    border: 1px solid #f6f7fb;
+    padding: 10px 15px 10px 15px;
+    margin: 5px 15px 0px 0px;
+    display: flex;
+    width: 100%;
+    outline: none;
+}￼
+input, textarea:focus{
+    box-shadow: 0 0.1em 0.5em 0.1em blueviolet;
+    border: 1px solid blueviolet;
+
+}
+.nya:focus{
+    box-shadow: 0 0.1em 0.5em 0.1em blueviolet;
+    border: 1px solid blueviolet;
+}
+.mail:focus{
+    box-shadow: 0 0.1em 0.5em 0.1em blueviolet;
+    border: 1px solid blueviolet;
+}
+
+/*******FOOTER Y BARRA DE NAV INFERIOR****/
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: blueviolet;
+    width: 100%;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+}
+.fgral{
+    text-align: center;
+}
+.navinf a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+}
+.fgral .navinf a:active{
+    box-shadow: 0.20em 0.1em 1.5em 0.1em; 
+}
+.redsocf{
+    padding-bottom: 2.2em;
+    display: flex;
+    justify-content: center;
+
+}
+.redso{
+    margin: 10px;
+}
+.white{
+    border-radius: 5em;
+    background-color: white;
+    padding: 0.8em;
+    color: blueviolet;
+}
+
+.white:hover{
+    color: white;
+    background-color: blueviolet;
+    border-radius: 5em;
+    padding: 0.75em;
+    border: 0.05em white solid;
+}
+
+.par{
+    color: white;
+    font-size: 16px;
+}
+.heart{
+    color: red;
+    font-size: 1em;
+}
+
+
+.contactfooter {
+    display: inline-flex;
+
+}
+
+/*******SOMBREADO LATERAL*******/
+/*.shadow{
+    box-shadow: 0px 0px 25px 0px rgb(172, 165, 165);
+}
+*/

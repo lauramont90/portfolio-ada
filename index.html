@@ -15,17 +15,18 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 </head>
 <body>
 <!---------HEADER CON BARRA DE NAVEGACION------------->
 <header>
-    <nav>
-        <ul>
-            <li><a class="btn" href="#">HOLA</a></li>
-            <li><a class="btn" href="#">CONOCIMIENTOS</a></li>
-            <li><a class="btn" href="#">PROYECTOS</a></li>
-            <li><a class="contacto btn" href="#">CONTACTO</a></li>
-        </ul>
+    <nav class="navtop">
+        
+        <a class="btn box br" href="#hola">HOLA</a>
+        <a class="btn box br" href="#conocimientos">CONOCIMIENTOS</a>
+        <a class="btn box br" href="#proyectos">PROYECTOS</a>
+        <a class="contacto btn br" href="#contacto">CONTACTO<a>
+        
     </nav>
 </header>
 <main>
@@ -33,7 +34,7 @@
 
 <!---------SECCION 1 Presentacion---------->
 <section>
-    <div class="cajagral"><!--DIV GENERAL-->
+    <div class="cajagral" id="hola"><!--DIV GENERAL-->
         <div class="caja1"><!--DIV PARA TITULOS,PARRAFO Y BOTON-->
             <h2>¡Hola! Soy</h2>
             <h1 class="mlm">María Laura Montiel</h1>
@@ -41,80 +42,149 @@
             <button class="boton">Lo que hago</button>
         </div>
         <div class="caja2"><!--DIV PARA IMAGEN-->
-            <img src="/img/undraw_Personal_website_re_c8dv.svg" alt="Desarroladora de Software">
+            <img class="imgcaja2" src="/img/undraw_Personal_website_re_c8dv.svg" alt="Desarroladora de Software">
         </div>
     </div>
 </section>
 <!---------SECCION 2 mis conocimientos--------->
 <section>
-    <div class="fondogrey"><!--DIV GENERAL 2-->
+    <div class="fondogrey shadow" id="conocimientos"><!--DIV GENERAL 2-->
         <div>
             <h1 class="titulo">Mis Conocimientos</h1>
-            <p>Estos son los conocimientos en Desarrollo Web que voy adquiriendo en mi recorrido por la carrera, los cuales servirán como herramientas que serán fundamentales para realizar mis proyectos de manera eficaz</p>
+            <p class="parrafos">Estos son los conocimientos en Desarrollo Web que voy adquiriendo en mi recorrido por la carrera, los cuales servirán como herramientas que serán fundamentales para realizar mis proyectos de manera eficaz</p>
         </div>
         <div class="cajagralimg"><!--DIV PARA IMAGENES-->
+           
             <div class="bor">
-                <img class="html jpeg" src="/img/html5.jpeg" alt="html">
+                <img class="html" src="/iconos/html-5.svg"  alt="html">
                 <h3>HTML 5</h3>
             </div>
             <div class="bor">
-                <img class="css jpeg" src="/img/css3.jpeg" alt="CSS">
+                <img class="css" src="/iconos/css3.svg" alt="CSS">
                 <h3>CSS 3</h3>
             </div>
             <div class="bor">
-                <img class="sass jpeg" src="/img/sass.jpeg" alt="Sass">
+                <img class="sass" src="/iconos/sass.svg" alt="Sass">
                 <h3>Sass</h3>
             </div>
             <div class="bor">
-                <img class="js jpeg" src="/img/js.jpeg" alt="JS">
+                <img class="js" src="/iconos/javascript.svg" alt="JS">
                 <h3>JavaScript</h3>
             </div>
             <div class="bor">
-                <img class="react jpeg" src="/img/react.jpeg" alt="React">
+                <img class="react" src="/iconos/react.svg" alt="React">
                 <h3>React</h3>
             </div>
             <div class="bor">
-                <img class="git jpeg" src="/img/git.jpeg" alt="Git">
+                <img class="git" src="/iconos/git.svg" alt="Git">
                 <h3>GIT</h3>
             </div>
-
+        
         </div>
     </div>
     
 </section>
 <!---------SECCION 3--------->
 <section>
-    <div><!--DIV PARA CITA, TITULO Y PARRAFO-->
+    <div class="cita espacio shadow"><!--DIV PARA CITA, TITULO Y PARRAFO-->
+       <i class="fas fa-quote-right comilla"></i>
     
+        <blockquote cite="steve">Si tu no trabajas por tus sueños, alguien te contratará para que trabajes por los suyos.</blockquote>
+        <h2 class="cita">Steve Jobs</h2>
     </div>
 </section>
 <!----------SECCION 4 mis proyectos-------->
 <section>
-    <div><!--DIV GENERAL 3-->
+    <div  id="proyectos" class="proyect"><!--DIV GENERAL 3-->
         <div><!--DIV PARA TITULO Y PARRAFO-->
             <h1 class="titulo">Mis Proyectos</h1>
-            <p>Estos son los proyectos en los que estaré trabajando en la medida en la que avance en la carrera</p>
+            <p class="parrafos">Estos son los proyectos en los que estaré trabajando en la medida en la que avance en la carrera</p>
         </div>
         <div class="cajagralimg mp"><!--DIV PARA IMAGENES-->
-            <div class="bor mp1"><img src="/img/holasoy.jpeg" alt="portfolio"></div>
-            <div class="bor mp1"><img src="/img/memes.jpeg" alt="Generador de Memes"></div>
-            <div class="bor mp1"><img src="/img/match.jpeg" alt="Match"></div>
-            <div class="bor mp1"><img src="/img/controlador.jpeg" alt="Controlador de Gastos"></div>
-            <div class="bor mp1"><img src="/img/adm.jpeg" alt="Administrador de reuniones"></div>
-            <div class="bor mp1"><img src="/img/app.jpeg" alt="Todo APP"></div>
-            <div class="bor mp1"><img src="/img/buscador.jpeg" alt="Buscador de peliculas"></div>
+            <div class="bor mp1">
+                <img class="imgt" src="/img/holasoy.jpeg" alt="portfolio">
+                <p>Portfolio</p>
+            </div>
+            <div class="bor mp1">
+                <img class="imgt" src="/imgproy/generador.svg" alt="Generador de Memes">
+                <p>Generador de Memes</p>
+            </div>
+            <div class="bor mp1">
+                <img class="imgt" src="/imgproy/match.svg" alt="Match">
+                <p>Match 3</p>
+            </div>
+            <div class="bor mp1">
+                <img class="imgt" src="/imgproy/gastos.svg" alt="Controlador de Gastos">
+                <p>Controlador de gastos</p>
+            </div>
+            <div class="bor mp1">
+                <img class="imgt" src="/imgproy/reuniones.svg" alt="Administrador de reuniones">
+                <p>Administrador de reuniones</p>
+            </div>
+            <div class="bor mp1">
+                <img class="imgt" src="/imgproy/todoapp.svg" alt="Todo APP">
+                <p>Todo APP</p>
+            </div>
+            <div class="bor mp1 izq">
+                <img class="imgt" src="/imgproy/buscador.svg" alt="Buscador de peliculas">
+                <p>Buscador de Películas</p>
+            </div>
         </div>
     </div>
 </section>
 <!----------SECCION 5 contacto-------->
-<section>
-    <div><!--DIV GENERAL 4-->
-        <div><!--DIV PARA TITULO, PARRAFO Y REDES SOCIALES-->
-            <h1 class="titulo">Contactame</h1>
-            <p>En esta sección podrás encontrar algunas de mis redes sociales, no dudes en contactarme.</p>
+<section class="backgrey" id="contacto">
+    <div class="contesc"><!--DIV GENERAL 4-->
+        <div class="contact"><!--DIV PARA TITULO Y PARRAFO-->
+            <h1 class="titulo left">Contactame</h1>
+            <p class="med">En esta sección podrás encontrar algunas de mis redes sociales, no dudes en contactarme.</p>
+        <div>    
+            <div class="redesoc">
+                <a class="red" href="https://twitter.com/lauramont90"><i class="fab fa-twitter icon"></i>@lauramont90</a>
+            </div>
+
+            <div class="redesoc">
+                <a class="red" href="https://github.com/lauramont90"> <i class="fab fa-github icon"> </i> lauramont90</a> 
+            </div>
+
+            <div class="redesoc">
+                <a class="red" href="https://www.linkedin.com/in/maria-laura-montiel-62a186107"> <i class="fab fa-linkedin icon"></i> María Laura Montiel</a>
+            </div>
+
+            <div class="redesoc">
+                <a class="red" href="mailto:lauramont90@hotmail.com"> <i class="far fa-envelope icon"></i> lauramont90@hotmail.com</a>
+            </div>
         </div>
-        <div><!--DIV PARA TITULO Y FORMULARIO CON BOTON-->
-            <h1 class="titulo">Escribime</h1>
+        </div>
+        <div class="form"><!--DIV PARA TITULO Y FORMULARIO CON BOTON-->
+            <h1 class="titulo left">Escribime</h1>
+            <form>
+            <div class="med nomap">
+                <div class="nom">
+                <label for="nombre">Nombre *</label>
+                <input class="nya" type="text" id="nombre" name="nombre" placeholder="p. ej.: Ada"/>
+                </div>
+                <div class="nom">
+                <label for="apellido">Apellido *</label>
+                <input class="nya" type="text" id="apellido" name="apellido" placeholder="p. ej.: Lovelace"/>
+                </div>
+            </div>
+            <div class="med">   
+                <div>
+                <label for="email">Email *</label>
+                <input class="mail" type="email" id="email" name="email"  placeholder="p. ej.: adalovelace@gmail.com">
+                </div>
+                <div>
+                <label class="msj" for="mensaje">Mensaje *</label>
+                <textarea class="shado" id="mensaje" name="mensaje" rows="8" cols="50">Escriba un mensaje aquí</textarea>
+                </div>
+                <div>
+                <label for="submit">
+                    <input class="env" type="submit" id="submit" name="submit" value="Enviar">
+                </label> 
+                </div>
+            </div> 
+            </form>
         </div>
     </div>
 </section>
@@ -122,8 +192,44 @@
 
 <!----------FOOTER CON BARRA DE NAVEGACION------>
 <footer>
-    <nav></nav>
-    <h3></h3>
+    <div class="fgral">
+        <div class="navinf">
+
+            <a href="#hola">HOLA</a>
+
+            <a href="#conocimientos">CONOCIMIENTOS</a>
+
+            <a href="#proyectos">PROYECTOS</a>
+
+            <a href="#contacto">CONTACTO</a>   
+
+        </div>
+
+        <div class="redsocf">
+
+            <div class="redso">
+                <a href="https://twitter.com/lauramont90" target="_blank"> <i class="white fab fa-twitter"></i> 
+                </a>
+            </div>
+            <div class="redso">
+                <a href="https://github.com/lauramont90" target="_blank"> <i class=" white fab fa-github"> </i>  
+                </a> 
+            </div>
+            <div class="redso">
+                <a href="https://www.linkedin.com/in/maria-laura-montiel-62a186107" target="_blank"> <i class="white fab fa-linkedin"></i>
+                </a>
+            </div>
+            <div class="redso">
+                <a href="mailto:lauramont90@hotmail.com" target="_blank"> <i class="white fas fa-envelope"></i>
+                </a>
+            </div>
+
+        </div>
+
+        <p class="par">Hecho con <i class="heart fas fa-heart"></i> por Laura</p>
+    </div>
+
+    
 </footer>
 </main>
 
