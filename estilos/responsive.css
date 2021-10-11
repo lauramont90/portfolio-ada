@@ -167,6 +167,25 @@
         width: 100%;
     }
 }
+@media (max-width:399px){
+
+    .boton {
+        margin: 40px 100px 100px;
+        width: 50%;
+    }
+    .bor{
+        width: 70%;
+    }
+    .bor1{
+        width: 70%;
+    }
+    .redesoc{
+        width: 80%;
+    }
+    .env{
+        width: 37%;
+    }
+}
 @media (max-width:350px){
     .boton{
         margin: 40px 75px;
